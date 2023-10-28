@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px red dashed;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    position: relative;
+    width: 300px;
+}
+
+.button{
+    position: relative;
+    display: grid;
+}
+
+#value{
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    w
+    padding: ;
+}

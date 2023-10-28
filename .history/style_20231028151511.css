@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px red dashed; */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-color: rgb(109, 109, 109);
+    /* background-color: #222; */
+}
+.calculator{
+    
+    position: relative;
+    width: 280px;
+    
+}
+
+.button{
+    position: relative;
+    display: grid;
+    background-color:#222;
+    width: 230px;
+    
+}
+
+#value{
+    width: 2em; /* Adjust the width as needed */
+    height: 1.8em; /* Adjust the height as needed */
+    resize: none; 
+
+    position: relative;
+    margin: 8px;
+    grid-column: span 4;
+    height: 80px;
+    line-height: 80px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: #a7af7c;
+    text-align: right;
+    font-size: 1.8rem;
+    color: #3a3c2e;
+    overflow: hidden;
+    box-shadow: inset 0 6px 1px 0 rgba(0,0,0,0.35),
+    0 5px 5px rgba(0,0,0,0.5),0 15px 25px rgba(0,0,0,0.35);
+    width: calc(100% - 16px);
+}
+
+
+span{
+    /* height: 25px; */
+    
+    position: relative;
+    padding:4px;
+    margin: 6px;
+    min-width: 30px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font
+    color: #999;
+    border: 2px solid #222;
+    background: linear-gradient(#555353,#363535);
+    box-shadow: inset 0 6px 1px 0 rgba(0,0,0,0.35),
+    0 5px 5px rgba(0,0,0,0.5),0 15px 25px rgba(0,0,0,0.35);
+    user-select: none;
+    cursor: pointer;
+}
+
+span::before{
+    content: "";
+    position: absolute;
+    border-top: 2px solid #ccc;
+    filter: blur(2px);
+}
+
+span:active{
+    box-shadow: inset 0 6px 1px 0 rgba(0,0,0,0.35),
+    0 5px 5px rgba(0,0,0,0.5),0 15px 25px rgba(0,0,0,0.35);
+
+}
+
+#clear{
+grid-column: span 2;
+background: rgba(247, 45, 45, 0.907);
+color: white;
+}
+
+#equal{
+    grid-row: span 2;
+    /* height: 62px; */
+    background: rgb(255, 155, 33);
+    color: white;
+}
